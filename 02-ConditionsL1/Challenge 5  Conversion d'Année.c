@@ -2,26 +2,28 @@
 const int y = 12, jour = 365, heures = 8765, minutes = 525949, secondes = 31556952;
 int main() {
     int year;
-    int x;
+     char menu ;
     printf("give me year : ");
     scanf("%d", &year);
-    printf("choose what are want to convertir : \n1 mois\n2 jour\n3 heures\n4 minutes\n5 secondes\n");
-     scanf("%d", &x);
-     switch(x)
+    
+    printf("choose what are want to convertir : \nA mois\nB jour\nC heures\nD minutes\nE secondes\n");
+     scanf(" %c", &menu);
+     
+     switch(menu)
     {
-        case 1 : 
+        case 'A' : 
             printf("y * year = %d", y * year);
         break;
-        case 2 : 
+        case 'B' : 
             printf("jour * year = %d", jour * year);
         break;
-        case 3 : 
+        case 'C' : 
             printf("heures * year = %d", heures * year);
         break;
-        case 4 : 
+        case 'D' : 
             printf("minutes * year = %d", minutes * year);
         break;
-         case 5 : 
+        case 'E' : 
             printf("secondes * year = %d", secondes * year);
         break;
     }
