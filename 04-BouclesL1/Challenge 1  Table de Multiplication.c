@@ -7,7 +7,7 @@ int main()
     for(i = 0;i <= 10;i++)
         {
             N = 4 * i;
-            printf(" 4 + %d = %d \n",N,i);
+            printf(" 4 * %d = %d \n",N,i);
         }
     return 0;
 }
