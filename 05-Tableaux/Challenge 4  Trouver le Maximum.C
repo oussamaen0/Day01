@@ -12,6 +12,7 @@ int main()
                 scanf("%d", &number);
                 tab[i] = number;
             }
+            max = tab[0];
             for(int i = 0; i < size; i++){
                 if (tab[i]>max){
                 max = tab[i];    
