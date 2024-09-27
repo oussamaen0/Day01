@@ -13,6 +13,6 @@ int main()
                 s = 0;
                     for(i = 0 ; i <= number ; i++)
                         s = s + i;
-                        printf("la factorielle de %d est = %.d",s,number);
+                        printf("la somme de %d est = %.d",s,number);
     return 0;
 }
