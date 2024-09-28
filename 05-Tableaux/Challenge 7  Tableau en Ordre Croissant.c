@@ -1,19 +1,32 @@
-// Online C compiler to run C program online
-#include <stdio.h>
+#include<stdio.h>
+int main(){
+int taille,temp;
 
-int main() {
-    int size,mult;
-        printf("entre size de tablaux : ");
-        scanf("%d",&size);
-    int tab[size];
-    int N;
-        for(int i = 0; i < size;i++){
-            printf("entre les nombre : ");
-            scanf("%d",&N);
-            tab[i] = N;
+printf("entrer la taille : ");
+scanf("%d",&taille);
+
+int tab[taille];
+
+for(int i=0;i<taille;i++)
+{
+    printf("entrer les nombre : ");
+    scanf("%d",&tab[i]);
+
+}
+ for (int i=0;i<taille;i++){
+ for (int j=i+1;j<taille;j++)
+    {
+        if (tab[i]<tab[j])
+        {
+
+            temp=tab[j];
+            tab[j]=tab[i];
+            tab[i]=temp;
         }
-       for(int i = size-1; i >= 0;i--){
-        printf("%d\n",tab[i]);}
-        
-        return 0;
+
+    }
+      printf("%d,",tab[i]);
+}
+
+return 0;
 }
