@@ -16,7 +16,7 @@ for(int i=0;i<taille;i++)
  for (int i=0;i<taille;i++){
  for (int j=i+1;j<taille;j++)
     {
-        if (tab[i]<tab[j])
+        if (tab[i]>tab[j])
         {
 
             temp=tab[j];
