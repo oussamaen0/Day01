@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int size,mult;
+    int size;
         printf("entre size de tablaux : ");
         scanf("%d",&size);
     int tab[size];
